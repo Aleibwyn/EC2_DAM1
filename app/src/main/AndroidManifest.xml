@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EC2_DAM1"
         tools:targetApi="31">
         <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

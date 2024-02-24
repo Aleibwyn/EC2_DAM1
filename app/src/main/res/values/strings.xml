@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">EC2_DAM1</string>
+    <string name="valbtnregistro">REGISTRO</string>
+    <string name="valbtnformulario">FORMULARIO</string>
+    <string name="valbtnlistado">LISTADO</string>
 </resources>
