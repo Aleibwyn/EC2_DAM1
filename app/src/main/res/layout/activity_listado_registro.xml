@@ -27,6 +27,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/txtlistadoregistro"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="parent" />
