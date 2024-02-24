@@ -114,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgSexo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -145,7 +145,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/txthobbies"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/rgSexo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -158,22 +158,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <CheckBox
-            android:id="@+id/chkDeporte"
+            android:id="@+id/cbDeporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/valchkdeporte" />
+            android:text="@string/valcbdeporte" />
 
         <CheckBox
-            android:id="@+id/chkPintura"
+            android:id="@+id/cbPintura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/valchkpintura" />
+            android:text="@string/valcbpintura" />
 
         <CheckBox
-            android:id="@+id/chkOtro"
+            android:id="@+id/cbOtro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/valchkotro" />
+            android:text="@string/valcbotro" />
 
         <EditText
             android:id="@+id/etHobby"

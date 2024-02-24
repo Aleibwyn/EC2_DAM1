@@ -13,9 +13,29 @@
     <string name="txthobbies">Hobbies</string>
     <string name="valrbhombre">Hombre</string>
     <string name="valrbmujer">Mujer</string>
-    <string name="valchkdeporte">Deporte</string>
-    <string name="valchkpintura">Pintura</string>
-    <string name="valchkotro">Otro</string>
+    <string name="valcbdeporte">Deporte</string>
+    <string name="valcbpintura">Pintura</string>
+    <string name="valcbotro">Otro</string>
     <string name="valetotro">Ingrese otro hobby</string>
     <string name="valbtnacceder">Acceder</string>
+    <string name="txtcuestionario">"CUESTIONARIO COVID-19 "</string>
+    <string name="txtpregunta1">1. Marca tus síntomas</string>
+    <string name="txtpregunta2">2. ¿Tienes fiebre mayor a 37 grados?</string>
+    <string name="txtpregunta3">3. ¿Vives solo en casa?</string>
+    <string name="txtpregunta4">4. ¿Vives con un adulto mayor en casa?</string>
+    <string name="txtpregunta5">5. ¿Cuentas con los siguientes servicios en casa?</string>
+    <string name="valcbsintoma1">Disminución del gusto o el olfato</string>
+    <string name="valcbsintoma2">Tos</string>
+    <string name="valcbsintoma3">Dolor de garganta</string>
+    <string name="valcbsintoma4">Congestión nasal</string>
+    <string name="valcbsintoma5">Fiebre</string>
+    <string name="valcbsintoma6">Ninguno</string>
+    <string name="valrbopcion1">Sí</string>
+    <string name="valrbopcion2">No</string>
+    <string name="valcbservicio1">Luz</string>
+    <string name="valcbservicio2">Agua</string>
+    <string name="valcbservicio3">Internet</string>
+    <string name="valcbservicio4">Cable</string>
+    <string name="valbtnresolver">Resolver</string>
+
 </resources>

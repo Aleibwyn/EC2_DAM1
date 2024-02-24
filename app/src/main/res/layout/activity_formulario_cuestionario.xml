@@ -33,7 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="TextView"
+            android:text="@string/txtcuestionario"
+            android:textSize="24sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="TextView"
+            android:text="@string/txtpregunta1"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -58,40 +59,40 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/cbSintoma1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbsintoma1" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/cbSintoma2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbsintoma2" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/cbSintoma3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbsintoma3" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/cbSintoma4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbsintoma4" />
+
+            <CheckBox
+                android:id="@+id/cbSintoma5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valcbsintoma5" />
+
+            <CheckBox
+                android:id="@+id/cbSintoma6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valcbsintoma6" />
         </LinearLayout>
 
         <TextView
@@ -99,12 +100,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="TextView"
+            android:text="@string/txtpregunta2"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
         <RadioGroup
-            android:id="@+id/radioGroup2"
+            android:id="@+id/rgPregunta2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -118,14 +119,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton" />
+                android:text="@string/valrbopcion1" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton" />
+                android:text="@string/valrbopcion2" />
         </RadioGroup>
 
         <TextView
@@ -133,12 +134,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="TextView"
+            android:text="@string/txtpregunta3"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+            app:layout_constraintTop_toBottomOf="@+id/rgPregunta2" />
 
         <RadioGroup
-            android:id="@+id/radioGroup3"
+            android:id="@+id/rgPregunta3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -152,14 +153,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton" />
+                android:text="@string/valrbopcion1" />
 
             <RadioButton
                 android:id="@+id/radioButton4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton" />
+                android:text="@string/valrbopcion2" />
         </RadioGroup>
 
         <TextView
@@ -167,12 +168,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="TextView"
+            android:text="@string/txtpregunta4"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+            app:layout_constraintTop_toBottomOf="@+id/rgPregunta3" />
 
         <RadioGroup
-            android:id="@+id/radioGroup4"
+            android:id="@+id/rgPregunta4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -186,24 +187,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton" />
+                android:text="@string/valrbopcion1" />
 
             <RadioButton
                 android:id="@+id/radioButton6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton" />
+                android:text="@string/valrbopcion2" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="58dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="TextView"
+            android:text="@string/txtpregunta5"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+            app:layout_constraintTop_toBottomOf="@+id/rgPregunta4" />
 
         <LinearLayout
             android:id="@+id/linearLayout3"
@@ -216,36 +217,36 @@
             app:layout_constraintTop_toBottomOf="@+id/textView9">
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/cbServicio1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbservicio1" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/cbServicio2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbservicio2" />
 
             <CheckBox
-                android:id="@+id/checkBox9"
+                android:id="@+id/cbServicio3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbservicio3" />
 
             <CheckBox
-                android:id="@+id/checkBox10"
+                android:id="@+id/cbServicio4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="@string/valcbservicio4" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnResolver"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Button"
+            android:text="@string/valbtnresolver"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
