@@ -37,5 +37,8 @@
     <string name="valcbservicio3">Internet</string>
     <string name="valcbservicio4">Cable</string>
     <string name="valbtnresolver">Resolver</string>
+    <string name="txtlibros">LIBROS DE MEDICINA</string>
+    <string name="txtlistadoregistro">LISTADO DE PERSONAS</string>
+    <string name="txtlistadocuestionario">LISTA DE RESPUESTAS AL CUESTIONARIO</string>
 
 </resources>

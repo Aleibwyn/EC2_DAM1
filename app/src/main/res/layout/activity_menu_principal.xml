@@ -24,7 +24,7 @@
         android:id="@+id/imageView"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
