@@ -3,4 +3,19 @@
     <string name="valbtnregistro">REGISTRO</string>
     <string name="valbtnformulario">FORMULARIO</string>
     <string name="valbtnlistado">LISTADO</string>
+    <string name="valetdni">DNI</string>
+    <string name="valetnombre">NOMBRE</string>
+    <string name="valetapellidos">APELLIDOS</string>
+    <string name="valetemail">EMAIL</string>
+    <string name="valetpassword">PASSWORD</string>
+    <string name="txtinformacion">INFORMACIÓN</string>
+    <string name="txtSexo">Sexo:</string>
+    <string name="txthobbies">Hobbies</string>
+    <string name="valrbhombre">Hombre</string>
+    <string name="valrbmujer">Mujer</string>
+    <string name="valchkdeporte">Deporte</string>
+    <string name="valchkpintura">Pintura</string>
+    <string name="valchkotro">Otro</string>
+    <string name="valetotro">Ingrese otro hobby</string>
+    <string name="valbtnacceder">Acceder</string>
 </resources>

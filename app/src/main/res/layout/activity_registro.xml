@@ -19,70 +19,76 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="TextView"
+        android:text="@string/txtinformacion"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etDni"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/valetdni"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/etNombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/valetnombre"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/etDni"
+        tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/etApellidos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/valetapellidos"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombre"
+        tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/etEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+        android:hint="@string/valetemail"
+        android:inputType="text|textEmailAddress"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/etApellidos"
+        tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/etPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+        android:hint="@string/valetpassword"
+        android:inputType="text|textPassword"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        tools:ignore="Autofill" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -103,9 +109,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="@string/txtSexo"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -118,18 +124,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbHombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/valrbhombre" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbMujer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/valrbmujer" />
     </RadioGroup>
 
     <TextView
@@ -137,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="@string/txthobbies"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -152,39 +158,40 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/chkDeporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/valchkdeporte" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/chkPintura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/valchkpintura" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/chkOtro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="@string/valchkotro" />
 
         <EditText
-            android:id="@+id/editTextText6"
+            android:id="@+id/etHobby"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/valetotro"
             android:inputType="text"
-            android:text="Name" />
+            tools:ignore="Autofill" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnAcceder"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:text="@string/valbtnacceder"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
