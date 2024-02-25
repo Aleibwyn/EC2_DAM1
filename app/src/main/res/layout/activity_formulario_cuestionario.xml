@@ -150,14 +150,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rbPregunta3si"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/valrbopcion1" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/rbPregunta3no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -184,14 +184,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView8">
 
             <RadioButton
-                android:id="@+id/radioButton5"
+                android:id="@+id/rbPregunta4si"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/valrbopcion1" />
 
             <RadioButton
-                android:id="@+id/radioButton6"
+                android:id="@+id/rbPregunta4no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

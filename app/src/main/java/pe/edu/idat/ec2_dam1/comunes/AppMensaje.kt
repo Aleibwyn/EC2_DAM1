@@ -5,7 +5,7 @@ import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
 import pe.edu.idat.ec2_dam1.R
 
-class AppMensaje {
+object AppMensaje {
     fun enviarMensaje(vista: View, mensaje: String, tipoMensaje: TipoMensaje){
         val snackBar = Snackbar.make(vista,mensaje, Snackbar.LENGTH_LONG)
         val snackBarView: View = snackBar.view
