@@ -26,9 +26,11 @@
         android:layout_height="180dp"
         android:layout_marginTop="16dp"
         android:importantForAccessibility="no"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/world"
         tools:srcCompat="@drawable/world" />
 
     <Button
