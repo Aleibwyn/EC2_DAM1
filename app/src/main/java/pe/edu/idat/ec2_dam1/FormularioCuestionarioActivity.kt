@@ -47,12 +47,8 @@ class FormularioCuestionarioActivity : AppCompatActivity(), View.OnClickListener
             when (v.id) {
                 R.id.btnResolver -> {
                     resolverCuestionario(v)
-                    startActivity(Intent(applicationContext, ListadoCuestionarioActivity::class.java)
-                        .apply {
-                            putExtra("listaSintomas", listaSintomas)
-                            putExtra("listaServicios", listaServicios)
-                            putExtra("listaCuestionario", listaCuestionario)
-                        })
+
+
                 }
             }
         }
@@ -73,6 +69,12 @@ class FormularioCuestionarioActivity : AppCompatActivity(), View.OnClickListener
                 "Cuestionario resuelto con éxito",
                 TipoMensaje.SUCCESSFULL)
             setearControles()
+            startActivity(Intent(applicationContext, ListadoCuestionarioActivity::class.java)
+                .apply {
+                    putExtra("listaSintomas", listaSintomas)
+                    putExtra("listaServicios", listaServicios)
+                    putExtra("listaCuestionario", listaCuestionario)
+                })
         }
     }
 
@@ -91,6 +93,9 @@ class FormularioCuestionarioActivity : AppCompatActivity(), View.OnClickListener
         binding.cbServicio2.isChecked = false
         binding.cbServicio3.isChecked = false
         binding.cbServicio4.isChecked = false
+        listaSintomas.clear()
+        listaServicios.clear()
+
     }
 
     // AGREGAR O QUITAR SELECCION DE CHECKBOXS
@@ -223,7 +228,7 @@ class FormularioCuestionarioActivity : AppCompatActivity(), View.OnClickListener
                 binding.root,
                 "Debe seleccionar almenos un servicio",
                 TipoMensaje.ERROR)
-        }else if (binding.rbPregunta3si.isChecked && !validarViveconAdulto()){
+        }else if (binding.rbPregunta3si.isChecked && validarViveconAdulto()){
             AppMensaje.enviarMensaje(
                 binding.root,
                 "Debe seleccionar si vive con un Adulto",
@@ -271,7 +276,7 @@ class FormularioCuestionarioActivity : AppCompatActivity(), View.OnClickListener
         return respuesta
     }
     private fun actualizarEstadoPregunta4(checkedId: Int) {
-        if (checkedId == R.id.rbPregunta3no) {
+        if (checkedId != R.id.rbPregunta3no) {
             // Si la respuesta a la pregunta 3 es "No", deshabilitar las opciones de la pregunta 4
             binding.rbPregunta4si.isEnabled = false
             binding.rbPregunta4no.isEnabled = false
