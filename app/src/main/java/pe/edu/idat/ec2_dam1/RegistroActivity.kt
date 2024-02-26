@@ -1,5 +1,6 @@
 package pe.edu.idat.ec2_dam1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -8,6 +9,7 @@ import pe.edu.idat.ec2_dam1.databinding.ActivityRegistroBinding
 class RegistroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegistroBinding
+    private val datosRegistrados: MutableList<String> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,9 +38,12 @@ class RegistroActivity : AppCompatActivity() {
         binding.btnAcceder.setOnClickListener {
             if (validarCampos()) {
                 Toast.makeText(this, "Datos validados correctamente", Toast.LENGTH_SHORT).show()
+                val opListadoRegistro = Intent(this, ListadoRegistroActivity::class.java)
+                startActivity(opListadoRegistro)
             }
         }
     }
+
     private fun validarCampos(): Boolean {
         val dni = binding.etDni.text.toString().trim()
         val nombre = binding.etNombre.text.toString().trim()
@@ -76,7 +81,6 @@ class RegistroActivity : AppCompatActivity() {
             }
 
         }
-
         return true
     }
 

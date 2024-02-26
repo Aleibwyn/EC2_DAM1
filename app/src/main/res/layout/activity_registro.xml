@@ -10,195 +10,236 @@
     tools:layout_editor_absoluteY="1dp"
     tools:context=".RegistroActivity">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1876AE">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/txtinformacion"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etDni"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/valetdni"
-        android:inputType="number"
-        android:maxLength="8"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Autofill" />
-
-    <EditText
-        android:id="@+id/etNombre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:maxLength="20"
-        android:hint="@string/valetnombre"
-        android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/etDni"
-        tools:ignore="Autofill" />
-
-    <EditText
-        android:id="@+id/etApellidos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:maxLength="50"
-        android:hint="@string/valetapellidos"
-        android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/etNombre"
-        tools:ignore="Autofill" />
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:maxLength="30"
-        android:hint="@string/valetemail"
-        android:inputType="text|textEmailAddress"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/etApellidos"
-        tools:ignore="Autofill" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/valetpassword"
-        android:inputType="text|textPassword"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail"
-        tools:ignore="Autofill" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="30dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/txtSexo"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
-
-    <RadioGroup
-        android:id="@+id/rgSexo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <RadioButton
-            android:id="@+id/rbHombre"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/valrbhombre" />
-
-        <RadioButton
-            android:id="@+id/rbMujer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/valrbmujer" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/txthobbies"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/rgSexo" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-        <CheckBox
-            android:id="@+id/cbDeporte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/valcbdeporte" />
-
-        <CheckBox
-            android:id="@+id/cbPintura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/valcbpintura" />
-
-        <CheckBox
-            android:id="@+id/cbOtro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/valcbotro" />
+            android:layout_marginTop="16dp"
+            android:text="@string/txtinformacion"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/etHobby"
-            android:layout_width="match_parent"
+            android:id="@+id/etDni"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#38B5FE"
             android:ems="10"
-            android:hint="@string/valetotro"
+            android:hint="@string/valetdni"
+            android:inputType="number"
+            android:maxLength="8"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="Autofill,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
+            android:hint="@string/valetnombre"
             android:inputType="text"
-            tools:ignore="Autofill" />
+            android:maxLength="20"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etDni"
+            tools:ignore="Autofill,TextContrastCheck" />
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
+            android:hint="@string/valetapellidos"
+            android:inputType="text"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etNombre"
+            tools:ignore="Autofill,TextContrastCheck" />
 
-    <Button
-        android:id="@+id/btnAcceder"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/valbtnacceder"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
+            android:hint="@string/valetemail"
+            android:inputType="text|textEmailAddress"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etApellidos"
+            tools:ignore="Autofill,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
+            android:hint="@string/valetpassword"
+            android:inputType="text|textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail"
+            tools:ignore="Autofill,TextContrastCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="30dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="30dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txtSexo"
+            android:textColor="#D8D8D8"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioGroup
+            android:id="@+id/rgSexo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <RadioButton
+                android:id="@+id/rbHombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/valrbhombre"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
+
+            <RadioButton
+                android:id="@+id/rbMujer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/valrbmujer"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txthobbies"
+            android:textColor="#D8D8D8"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/rgSexo"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <CheckBox
+                android:id="@+id/cbDeporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valcbdeporte"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
+
+            <CheckBox
+                android:id="@+id/cbPintura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valcbpintura"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
+
+            <CheckBox
+                android:id="@+id/cbOtro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valcbotro"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/etHobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#38B5FE"
+                android:ems="10"
+                android:hint="@string/valetotro"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#49454F"
+                tools:ignore="Autofill,TextContrastCheck" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAcceder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#38B5FE"
+            android:text="@string/valbtnacceder"
+            android:textColor="#D8D8D8"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
