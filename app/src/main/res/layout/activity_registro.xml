@@ -11,113 +11,116 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#1876AE">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/txtinformacion"
-            android:textSize="16sp"
+            android:textColor="#D8D8D8"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:id="@+id/etDni"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
             android:hint="@string/valetdni"
+            android:inputType="number"
+            android:maxLength="8"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="Autofill,TextContrastCheck" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:maxLength="8"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                tools:ignore="TextContrastCheck,TextContrastCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:id="@+id/etNombre"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
             android:hint="@string/valetnombre"
+            android:inputType="text"
+            android:maxLength="20"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/etDni">
+            app:layout_constraintTop_toBottomOf="@+id/etDni"
+            tools:ignore="Autofill,TextContrastCheck" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text|textPersonName|textAutoComplete"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                tools:ignore="TextContrastCheck,TextContrastCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:id="@+id/etApellidos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
             android:hint="@string/valetapellidos"
+            android:inputType="text"
+            android:maxLength="50"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/etNombre">
+            app:layout_constraintTop_toBottomOf="@+id/etNombre"
+            tools:ignore="Autofill,TextContrastCheck" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text|textPersonName|textAutoComplete"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                tools:ignore="TextContrastCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:id="@+id/etEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
+            android:hint="@string/valetemail"
+            android:inputType="text|textEmailAddress"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/etApellidos"
-            app:startIconDrawable="@drawable/email">
+            tools:ignore="Autofill,TextContrastCheck" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/valetemail"
-                android:inputType="text|textEmailAddress|textAutoComplete"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                tools:ignore="TextContrastCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:id="@+id/etPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
+            android:ems="10"
             android:hint="@string/valetpassword"
-            app:boxBackgroundMode="outline"
-            app:endIconMode="password_toggle"
+            android:inputType="text|textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#49454F"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/etEmail"
-            app:startIconDrawable="@android:drawable/ic_secure">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text|textVisiblePassword"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
-        </com.google.android.material.textfield.TextInputLayout>
+            tools:ignore="Autofill,TextContrastCheck" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -139,8 +142,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txtSexo"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            tools:ignore="TextContrastCheck" />
 
         <RadioGroup
             android:id="@+id/rgSexo"
@@ -157,14 +163,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/valrbhombre" />
+                android:text="@string/valrbhombre"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
 
             <RadioButton
                 android:id="@+id/rbMujer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/valrbmujer" />
+                android:text="@string/valrbmujer"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
         </RadioGroup>
 
         <TextView
@@ -173,8 +183,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txthobbies"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/rgSexo" />
+            app:layout_constraintTop_toBottomOf="@+id/rgSexo"
+            tools:ignore="TextContrastCheck" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -190,48 +203,53 @@
                 android:id="@+id/cbDeporte"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/valcbdeporte" />
+                android:text="@string/valcbdeporte"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
 
             <CheckBox
                 android:id="@+id/cbPintura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/valcbpintura" />
+                android:text="@string/valcbpintura"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
 
             <CheckBox
                 android:id="@+id/cbOtro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/valcbotro" />
+                android:text="@string/valcbotro"
+                android:textColor="#D8D8D8"
+                tools:ignore="TextContrastCheck" />
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
                 android:id="@+id/etHobby"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#38B5FE"
+                android:ems="10"
                 android:hint="@string/valetotro"
-                app:boxBackgroundMode="filled"
-                app:hintTextAppearance="@style/TextAppearance.AppCompat.Small">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    tools:ignore="TextContrastCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#49454F"
+                android:textSize="14sp"
+                tools:ignore="Autofill,TextContrastCheck" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnAcceder"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#38B5FE"
             android:text="@string/valbtnacceder"
+            android:textColor="#D8D8D8"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="TextContrastCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

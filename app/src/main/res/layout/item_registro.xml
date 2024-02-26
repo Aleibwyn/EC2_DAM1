@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3E050F15"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="139dp"
+        android:layout_height="139dp"
+        app:srcCompat="@mipmap/contacto"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_dni"
+            android:textColor="#D8D8D8"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNombreyApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_nom_ap"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_gen"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewHobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_hobbie"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_email"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_pass"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

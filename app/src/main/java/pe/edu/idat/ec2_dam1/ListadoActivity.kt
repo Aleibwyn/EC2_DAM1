@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import pe.edu.idat.ec2_dam1.databinding.ActivityListadoBinding
-import java.time.LocalDate
 
 
 class ListadoActivity : AppCompatActivity() {

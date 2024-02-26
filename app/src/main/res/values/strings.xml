@@ -1,23 +1,40 @@
 <resources>
     <string name="app_name">EC2_DAM1</string>
-    <string name="valbtnregistro">REGISTRO</string>
-    <string name="valbtnformulario">FORMULARIO</string>
-    <string name="valbtnlistado">LISTADO</string>
-    <string name="valetdni">DNI</string>
-    <string name="valetnombre">NOMBRE</string>
-    <string name="valetapellidos">APELLIDOS</string>
-    <string name="valetemail">EMAIL</string>
-    <string name="valetpassword">PASSWORD</string>
-    <string name="txtinformacion">INFORMACIÓN</string>
+
+    <!--menu principal-->
+    <string name="valbtnregistro">Registro</string>
+    <string name="valbtnformulario">Formulario</string>
+    <string name="valbtnlistado">Listado</string>
+
+    <!--formulario registro-->
+    <string name="txtinformacion">Información</string>
+    <string name="valetdni">Dni</string>
+    <string name="valetnombre">Nombre</string>
+    <string name="valetapellidos">Apellidos</string>
+    <string name="valetemail">Email</string>
+    <string name="valetpassword">Password</string>
+
     <string name="txtSexo">Sexo:</string>
-    <string name="txthobbies">Hobbies</string>
     <string name="valrbhombre">Hombre</string>
     <string name="valrbmujer">Mujer</string>
+
+    <string name="txthobbies">Hobbies:</string>
     <string name="valcbdeporte">Deporte</string>
     <string name="valcbpintura">Pintura</string>
-    <string name="valcbotro">Otro</string>
+    <string name="valcbotro">Otro:</string>
     <string name="valetotro">Ingrese otro hobby</string>
+
     <string name="valbtnacceder">Acceder</string>
+
+    <string name="txtlistadoregistro">Listado de Personas</string>
+    <string name="reg_dni">dni</string>
+    <string name="reg_nom_ap">nombre y apellidos</string>
+    <string name="reg_gen">genero</string>
+    <string name="reg_hobbie">hobbie</string>
+    <string name="reg_email">email</string>
+    <string name="reg_pass">password</string>
+
+    <!---->
     <string name="txtcuestionario">"CUESTIONARIO COVID-19 "</string>
     <string name="txtpregunta1">1. Marca tus síntomas</string>
     <string name="txtpregunta2">2. ¿Tienes fiebre mayor a 37 grados?</string>
@@ -38,7 +55,6 @@
     <string name="valcbservicio4">Cable</string>
     <string name="valbtnresolver">Resolver</string>
     <string name="txtlibros">LIBROS DE MEDICINA</string>
-    <string name="txtlistadoregistro">LISTADO DE PERSONAS</string>
-    <string name="txtlistadocuestionario">LISTA DE RESPUESTAS AL CUESTIONARIO</string>
 
+    <string name="txtlistadocuestionario">LISTA DE RESPUESTAS AL CUESTIONARIO</string>
 </resources>
