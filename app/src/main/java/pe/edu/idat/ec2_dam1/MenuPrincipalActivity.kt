@@ -7,7 +7,7 @@ import pe.edu.idat.ec2_dam1.databinding.ActivityMenuPrincipalBinding
 
 class MenuPrincipalActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMenuPrincipalBinding;
+    private lateinit var binding: ActivityMenuPrincipalBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
