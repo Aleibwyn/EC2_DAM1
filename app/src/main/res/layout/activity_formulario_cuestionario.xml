@@ -12,7 +12,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#1876AE">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline5"
@@ -46,6 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txtpregunta1"
+            android:textColor="#050505"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -102,6 +105,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txtpregunta2"
+            android:textColor="#050505"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
@@ -136,6 +141,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txtpregunta3"
+            android:textColor="#050505"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/rgPregunta2" />
 
@@ -170,6 +177,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txtpregunta4"
+            android:textColor="#050505"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/rgPregunta3" />
 
@@ -204,6 +213,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/txtpregunta5"
+            android:textColor="#050505"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/rgPregunta4" />
 
